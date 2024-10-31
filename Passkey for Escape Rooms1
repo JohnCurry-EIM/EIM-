@@ -1,0 +1,16 @@
+<script>
+    function checkCode() {
+        const input = document.getElementById('codeInput').value;
+        const correctCode = "1234"; // Replace with your own code
+        const result = document.getElementById('result');
+
+        if (input === correctCode) {
+            result.textContent = "Correct! Click here to access the next room!";
+            result.style.color = "green";
+            result.innerHTML = "<a href='link_to_next_page'>Go to the next room</a>"; // Link to next module or page
+        } else {
+            result.textContent = "Incorrect code, try again!";
+            result.style.color = "red";
+        }
+    }
+</script>
